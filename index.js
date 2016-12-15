@@ -22,11 +22,11 @@ if(count > 0){
    return count + " Bet";
 }
   else return count + " Hold";
-   
+   document.getElementById("demo").innerHTML = "value of card = " + count;
   // Only change code above this line
 }
 
 // Add/remove calls to test your function.
 // Note: Only the last will display
-cc(2);cc(3); cc(6); 
+//cc(2);cc(3); cc(6); 
 //cc('K'); cc('A');
