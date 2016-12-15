@@ -8,9 +8,34 @@
 
 <button type="button" onclick="cc(2)">Try it</button>
 
-<p>(myFunction is stored in an external file called "index.js")</p>
 
-<script src="index.js"></script>
+
+<script>
+  function cc(card) {
+    var count = 0;
+  // Only change code below this line
+  if(card >= 2 & card <= 6){
+    count ++;
+  }
+      else if(card >= 7 & card <= 9){
+        count = count;
+      }
+  switch(card){
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count --;
+      break;
+  }
+if(count > 0){
+   return count + " Bet";
+}
+  else return count + " Hold";
+   document.getElementById("demo").innerHTML = "value of card = " + count;
+  // Only change code above this line
+}</script>
 
 </body>
 </html>
